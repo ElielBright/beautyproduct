@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products</title>
+    <link rel="stylesheet" href="oriflame.css">
+</head>
+<body>
+    <header>
+        <h1>Beauty Products</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#skincare">Skincare, Bath & Body</a></li>
+                <li><a href="#fragrance">Fragrance</a></li>
+                <li><a href="#haircare">Hair Care</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="skincare">
+            <h2>Skincare, bath & body Products</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="images/Tender care balm different flavour.jpg" alt="Tender care balm">
+                    <h3>Tender care balm</h3>
+                    <p>GHC 95</p>
+                    <p class="description">A versatile balm that soothes dry skin and provides essential hydration.</p>
+                    <button class="purchase-button" onclick="purchase('Tender care balm', 95)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Tender care balm', 'A versatile balm that soothes dry skin and provides essential hydration.', 95)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Glow essential body lotion.jpg" alt="Glow essential body lotion">
+                    <h3>Glow essential body lotion</h3>
+                    <p>GHC 189</p>
+                    <p class="description">A nourishing body lotion for glowing skin.</p>
+                    <button class="purchase-button" onclick="purchase('Glow essential body lotion', 189)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Glow essential body lotion', 'A nourishing body lotion for glowing skin.', 189)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle teenage gentle wash.jpg" alt="Feminelle teenage gentle wash">
+                    <h3>Feminelle teenage gentle wash</h3>
+                    <p>GHC 165</p>
+                    <p class="description">A gentle wash suitable for teenage skin.</p>
+                    <button class="purchase-button" onclick="purchase('Feminelle teenage gentle wash', 165)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Feminelle teenage gentle wash', 'A gentle wash suitable for teenage skin.', 165)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle protecting wash.jpg" alt="Feminelle protecting wash">
+                    <h3>Feminelle protecting wash</h3>
+                    <p>GHC 165</p>
+                    <p class="description">A protective wash for sensitive skin.</p>
+                    <button class="purchase-button" onclick="purchase('Feminelle protecting wash', 165)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Feminelle protecting wash', 'A protective wash for sensitive skin.', 165)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle soothing aloe wash.jpg" alt="Feminelle soothing aloe wash">
+                    <h3>Feminelle soothing aloe wash</h3>
+                    <p>GHC 165</p>
+                    <p class="description">A soothing aloe-based wash for sensitive skin.</p>
+                    <button class="purchase-button" onclick="purchase('Feminelle soothing aloe wash', 165)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Feminelle soothing aloe wash', 'A soothing aloe-based wash for sensitive skin.', 165)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle extracomfort.jpg" alt="Feminelle extracomfort">
+                    <h3>Feminelle extracomfort</h3>
+                    <p>GHC 165</p>
+                    <p class="description">An extra-comfort wash for daily use.</p>
+                    <button class="purchase-button" onclick="purchase('Feminelle extracomfort', 165)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Feminelle extracomfort', 'An extra-comfort wash for daily use.', 165)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/love Nature Purifyiing set.jpg" alt="love Nature Purifyiing set">
+                    <h3>Love Nature Purifying Set</h3>
+                    <p>GHC 715</p>
+                    <p class="description">A purifying set for natural skincare.</p>
+                    <button class="purchase-button" onclick="purchase('Love Nature Purifying Set', 715)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Nature Purifying Set', 'A purifying set for natural skincare.', 715)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/NovAge men set.jpg" alt="NovAge men">
+                    <h3>NovAge Men Set</h3>
+                    <p>GHC 1,691</p>
+                    <p class="description">A complete skincare set for men.</p>
+                    <button class="purchase-button" onclick="purchase('NovAge Men Set', 1691)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('NovAge Men Set', 'A complete skincare set for men.', 1691)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Activelle deodorant.jpg" alt="Activelle deodorant">
+                    <h3>Activelle Deodorant</h3>
+                    <p>GHC 84</p>
+                    <p class="description">A long-lasting deodorant for daily use.</p>
+                    <button class="purchase-button" onclick="purchase('Activelle Deodorant', 84)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Activelle Deodorant', 'A long-lasting deodorant for daily use.', 84)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Activelle even out deodorant.jpg" alt="Activelle even out deodorant">
+                    <h3>Activelle Even Out Deodorant</h3>
+                    <p>GHC 84</p>
+                    <p class="description">A deodorant that evens out skin tone.</p>
+                    <button class="purchase-button" onclick="purchase('Activelle Even Out Deodorant', 84)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Activelle Even Out Deodorant', 'A deodorant that evens out skin tone.', 84)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Activelle extreme deodorant.jpg" alt="Activelle extreme deodorant">
+                    <h3>Activelle Extreme Deodorant</h3>
+                    <p>GHC 84</p>
+                    <p class="description">An extreme protection deodorant.</p>
+                    <button class="purchase-button" onclick="purchase('Activelle Extreme Deodorant', 84)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Activelle Extreme Deodorant', 'An extreme protection deodorant.', 84)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature body lotion.jpg" alt="Love nature body lotion">
+                    <h3>Love Nature Body Lotion</h3>
+                    <p>GHC 412</p>
+                    <p class="description">A nourishing body lotion for all skin types.</p>
+                    <button class="purchase-button" onclick="purchase('Love Nature Body Lotion', 412)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Nature Body Lotion', 'A nourishing body lotion for all skin types.', 412)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh tooth paste white.jpg" alt="optifresh tooth paste white">
+                    <h3>Optifresh Toothpaste White</h3>
+                    <p>GHC 83</p>
+                    <p class="description">A toothpaste for whitening teeth.</p>
+                    <button class="purchase-button" onclick="purchase('Optifresh Toothpaste White', 83)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Optifresh Toothpaste White', 'A toothpaste for whitening teeth.', 83)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh sensitive.jpg" alt="optifresh sensitive">
+                    <h3>Optifresh Sensitive</h3>
+                    <p>GHC 83</p>
+                    <p class="description">A toothpaste for sensitive teeth.</p>
+                    <button class="purchase-button" onclick="purchase('Optifresh Sensitive', 83)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Optifresh Sensitive', 'A toothpaste for sensitive teeth.', 83)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh kid tooth psate.jpg" alt="optifresh kid tooth psate">
+                    <h3>Optifresh Kid Toothpaste</h3>
+                    <p>GHC 40</p>
+                    <p class="description">A toothpaste specially designed for kids.</p>
+                    <button class="purchase-button" onclick="purchase('Optifresh Kid Toothpaste', 40)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Optifresh Kid Toothpaste', 'A toothpaste specially designed for kids.', 40)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh natural oils tooth paste.jpg" alt="optifresh natural oils tooth paste">
+                    <h3>Optifresh Natural Oils Toothpaste</h3>
+                    <p>GHC 83</p>
+                    <p class="description">A toothpaste enriched with natural oils.</p>
+                    <button class="purchase-button" onclick="purchase('Optifresh Natural Oils Toothpaste', 83)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Optifresh Natural Oils Toothpaste', 'A toothpaste enriched with natural oils.', 83)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh maximum tooth paste.jpg" alt="optifresh maximum tooth paste">
+                    <h3>Optifresh Maximum Toothpaste</h3>
+                    <p>GHC 83</p>
+                    <p class="description">A maximum protection toothpaste.</p>
+                    <button class="purchase-button" onclick="purchase('Optifresh Maximum Toothpaste', 83)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Optifresh Maximum Toothpaste', 'A maximum protection toothpaste.', 83)">View Details</button>
+                </div>
+                <!-- Add more skincare products as needed -->
+            </div>
+        </section>
+
+        <section id="fragrance">
+            <h2>Fragrance Products</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="images/Giordani Gold.jpg" alt="Giordani Gold">
+                    <h3>Giordani Gold</h3>
+                    <p>GHC 500</p>
+                    <p class="description">A luxurious fragrance for men.</p>
+                    <button class="purchase-button" onclick="purchase('Giordani Gold', 500)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Giordani Gold', 'A luxurious fragrance for men.', 500)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Giordan Gold for women.jpg" alt="Giordani Gold for women">
+                    <h3>Giordani Gold for women</h3>
+                    <p>GHC 720</p>
+                    <p class="description">A luxurious fragrance for women.</p>
+                    <button class="purchase-button" onclick="purchase('Giordani Gold for women', 720)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Giordani Gold for women', 'A luxurious fragrance for women.', 720)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Macnetista perfume.jpg" alt="Macnetista perfume">
+                    <h3>Macnetista Perfume</h3>
+                    <p>$35.00</p>
+                    <p class="description">A captivating fragrance for all occasions.</p>
+                    <button class="purchase-button" onclick="purchase('Macnetista Perfume', 35)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Macnetista Perfume', 'A captivating fragrance for all occasions.', 35)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Whispers of me.jpg" alt="Whispers of me">
+                    <h3>Whispers of Me</h3>
+                    <p>GHC 599</p>
+                    <p class="description">A delicate and enchanting fragrance.</p>
+                    <button class="purchase-button" onclick="purchase('Whispers of Me', 599)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Whispers of Me', 'A delicate and enchanting fragrance.', 599)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/ffbbc49b1df1ad6464d0b66b0b1014e8.jpg" alt="Oh Sweet">
+                    <h3>Oh Sweet</h3>
+                    <p>GHC 383</p>
+                    <p class="description">A sweet and irresistible fragrance.</p>
+                    <button class="purchase-button" onclick="purchase('Oh Sweet', 383)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Oh Sweet', 'A sweet and irresistible fragrance.', 383)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Perfume.jpg" alt="Love Portion Eau de Parfum">
+                    <h3>Love Portion Eau de Parfum</h3>
+                    <p>GHC 599</p>
+                    <p class="description">A romantic and alluring fragrance.</p>
+                    <button class="purchase-button" onclick="purchase('Love Portion Eau de Parfum', 599)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Portion Eau de Parfum', 'A romantic and alluring fragrance.', 599)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/b1636823488c687c0a4668a666ac6e79.jpg" alt="Infinita Eau de Parfum">
+                    <h3>Infinita Eau de Parfum</h3>
+                    <p>GHC 599</p>
+                    <p class="description">An infinite and timeless fragrance.</p>
+                    <button class="purchase-button" onclick="purchase('Infinita Eau de Parfum', 599)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Infinita Eau de Parfum', 'An infinite and timeless fragrance.', 599)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Fragance.jpg" alt="Divine Exclusive Eau de Parfum">
+                    <h3>Divine Exclusive Eau de Parfum</h3>
+                    <p>GHC 865</p>
+                    <p class="description">A divine and exclusive fragrance.</p>
+                    <button class="purchase-button" onclick="purchase('Divine Exclusive Eau de Parfum', 865)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Divine Exclusive Eau de Parfum', 'A divine and exclusive fragrance.', 865)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/ECLAS Toujours.jpg" alt="Eclat Toujours Eau de Toilette">
+                    <h3>Eclat Toujours Eau de Toilette</h3>
+                    <p>GHC 430</p>
+                    <p class="description">A sparkling and refreshing fragrance.</p>
+                    <button class="purchase-button" onclick="purchase('Eclat Toujours Eau de Toilette', 430)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Eclat Toujours Eau de Toilette', 'A sparkling and refreshing fragrance.', 430)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Possess.jpg" alt="Possess Absolute Man Eau de Parfum">
+                    <h3>Possess Absolute Man Eau de Parfum</h3>
+                    <p>GHC 719</p>
+                    <p class="description">A bold and masculine fragrance.</p>
+                    <button class="purchase-button" onclick="purchase('Possess Absolute Man Eau de Parfum', 719)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Possess Absolute Man Eau de Parfum', 'A bold and masculine fragrance.', 719)">View Details</button>
+                </div>
+                <!-- Add more fragrance products as needed -->
+            </div>
+        </section>
+
+
+
+
+
+        <section id="haircare">
+            <h2>Hair Care Products</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="images/Love nature hot oil oconut.jpg" alt="Love nature hot oil coconut">
+                    <h3>Love Nature Hot Oil Coconut</h3>
+                    <p>GHC 54</p>
+                    <p class="description">A nourishing hot oil treatment for hair.</p>
+                    <button class="purchase-button" onclick="purchase('Love Nature Hot Oil Coconut', 54)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Nature Hot Oil Coconut', 'A nourishing hot oil treatment for hair.', 54)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature shampoo and conditioner for dry hair.jpg" alt="Love nature shampoo and conditioner for dry hair">
+                    <h3>Love Nature Shampoo and Conditioner for Dry Hair</h3>
+                    <p>GHC 344</p>
+                    <p class="description">A set for dry hair care.</p>
+                    <button class="purchase-button" onclick="purchase('Love Nature Shampoo and Conditioner for Dry Hair', 344)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Nature Shampoo and Conditioner for Dry Hair', 'A set for dry hair care.', 344)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature nourishing hair oil.jpg" alt="Love nature nourishing hair oil">
+                    <h3>Love Nature Nourishing Hair Oil</h3>
+                    <p>GHC 179</p>
+                    <p class="description">A nourishing hair oil for all hair types.</p>
+                    <button class="purchase-button" onclick="purchase('Love Nature Nourishing Hair Oil', 179)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Nature Nourishing Hair Oil', 'A nourishing hair oil for all hair types.', 179)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature Avocado.jpg" alt="Love nature Avocado">
+                    <h3>Love Nature Avocado</h3>
+                    <p>GHC 179</p>
+                    <p class="description">A nourishing avocado-based hair product.</p>
+                    <button class="purchase-button" onclick="purchase('Love Nature Avocado', 179)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Nature Avocado', 'A nourishing avocado-based hair product.', 179)">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature body, face and hair oil.jpg" alt="Love nature body, face and hair oil">
+                    <h3>Love Nature Body, Face, and Hair Oil</h3>
+                    <p>GHC 179</p>
+                    <p class="description">A versatile oil for body, face, and hair.</p>
+                    <button class="purchase-button" onclick="purchase('Love Nature Body, Face, and Hair Oil', 179)">Purchase</button>
+                    <button class="view-details-button" onclick="openModal('Love Nature Body, Face, and Hair Oil', 'A versatile oil for body, face, and hair.', 179)">View Details</button>
+                </div>
+                <!-- Add more hair care products as needed -->
+            </div>
+        </section>
+
+<!-- Nutrition Section (Moved outside of haircare section) -->
+<section id="nutrition">
+    <h2>Nutrition Products</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="images/wellness pack for man.jpg" alt="Wellness pack for man">
+            <h3>Wellness Pack for Men</h3>
+            <p>GHC 899</p>
+            <p class="description">A complete wellness pack for men.</p>
+            <button class="purchase-button" onclick="purchase('Wellness Pack for Men', 899)">Purchase</button>
+            <button class="view-details-button" onclick="openModal('Wellness Pack for Men', 'A complete wellness pack for men.', 899)">View Details</button>
+        </div>
+        <div class="product">
+            <img src="images/Welness pack for woman.jpg" alt="Wellness pack for woman">
+            <h3>Wellness Pack for Women</h3>
+            <p>GHC 899</p>
+            <p class="description">A complete wellness pack for women.</p>
+            <button class="purchase-button" onclick="purchase('Wellness Pack for Women', 899)">Purchase</button>
+            <button class="view-details-button" onclick="openModal('Wellness Pack for Women', 'A complete wellness pack for women.', 899)">View Details</button>
+        </div>
+        <div class="product">
+            <img src="images/wellosophy meal replacement.jpg" alt="Wellosophy meal replacement">
+            <h3>Wellosophy Meal Replacement</h3>
+            <p>GHC 1499</p>
+            <p class="description">A meal replacement for a balanced diet.</p>
+            <button class="purchase-button" onclick="purchase('Wellosophy Meal Replacement', 1499)">Purchase</button>
+            <button class="view-details-button" onclick="openModal('Wellosophy Meal Replacement', 'A meal replacement for a balanced diet.', 1499)">View Details</button>
+        </div>
+        <div class="product">
+            <img src="images/omega.jpeg" alt="Omega-3">
+            <h3>Omega-3</h3>
+            <p>GHC 610</p>
+            <p class="description">Omega-3 supplements for heart and brain health.</p>
+            <button class="purchase-button" onclick="purchase('Omega-3', 610)">Purchase</button>
+            <button class="view-details-button" onclick="openModal('Omega-3', 'Omega-3 supplements for heart and brain health.', 610)">View Details</button>
+        </div>
+        <div class="product">
+            <img src="images/wellosophy astaxanthin.jpg" alt="Wellosophy astaxanthin">
+            <h3>Wellosophy Astaxanthin</h3>
+            <p>GHC 659</p>
+            <p class="description">Astaxanthin supplements for skin and eye health.</p>
+            <button class="purchase-button" onclick="purchase('Wellosophy Astaxanthin', 659)">Purchase</button>
+            <button class="view-details-button" onclick="openModal('Wellosophy Astaxanthin', 'Astaxanthin supplements for skin and eye health.', 659)">View Details</button>
+        </div>
+        <!-- Add more nutrition products as needed -->
+    </div>
+</section>
+
+ <!-- Product Details Modal -->
+ <div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-product-name"></h2>
+        <p id="modal-product-description"></p>
+        <p id="modal-product-price"></p>
+    </div>
+</div>
+
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out via WhatsApp!</p>
+            <a href="https://wa.me/233551972704?text=Hello%20Cindy'sbeautyandmore%20I%20am%20interested%20in%20the%20free%20skincare%20*masterClass%20*%20%0AMy%20name%20is" class="whatsapp-button">Chat on WhatsApp</a>
+        </section>
+    </main>
+    <script src="oriflame.js" defer></script>
+
+    <footer>
+        <p>&copy; 2023 Beauty Products. All rights reserved.</p>
+    </footer>
+</body>
+</html>
